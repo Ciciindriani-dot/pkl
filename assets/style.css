@@ -1,0 +1,274 @@
+/* =========================
+   RESET
+========================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* =========================
+   BODY
+========================= */
+body{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #6366f1,
+        #7c3aed
+    );
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container{
+
+    width:100%;
+    max-width:500px;
+
+    padding:45px;
+
+    border-radius:32px;
+
+    background:
+    rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    border:
+    1px solid rgba(255,255,255,.2);
+
+    box-shadow:
+    0 25px 50px rgba(0,0,0,.15);
+}
+
+/* =========================
+   HEADER
+========================= */
+.register-header,
+.login-header{
+
+    text-align:center;
+
+    margin-bottom:35px;
+}
+
+/* LOGO */
+.logo-circle{
+
+    width:72px;
+    height:72px;
+
+    margin:auto;
+    margin-bottom:18px;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#4f46e5;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:24px;
+    font-weight:700;
+}
+
+/* TITLE */
+.register-header h2,
+.login-header h1{
+
+    color:white;
+
+    font-size:38px;
+
+    margin-bottom:10px;
+}
+
+/* SUBTITLE */
+.register-header span,
+.login-header p{
+
+    color:
+    rgba(255,255,255,.8);
+
+    line-height:1.7;
+}
+
+/* =========================
+   FORM SECTION
+========================= */
+.form-section{
+
+    margin-bottom:25px;
+}
+
+/* SECTION TITLE */
+.section-title{
+
+    color:white;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.5px;
+}
+
+/* =========================
+   INPUT & SELECT
+========================= */
+input,
+select{
+
+    width:100%;
+
+    padding:18px;
+
+    margin-bottom:16px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:
+    rgba(255,255,255,.18);
+
+    color:white;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.3s;
+}
+
+/* PLACEHOLDER */
+input::placeholder{
+
+    color:
+    rgba(255,255,255,.7);
+}
+
+/* SELECT */
+select{
+
+    color:white;
+}
+
+/* OPTION */
+option{
+
+    color:black;
+}
+
+/* FOCUS */
+input:focus,
+select:focus{
+
+    background:
+    rgba(255,255,255,.25);
+}
+
+/* =========================
+   BUTTON
+========================= */
+button{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:white;
+
+    color:#4f46e5;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    margin-top:10px;
+
+    transition:.3s;
+}
+
+/* HOVER */
+button:hover{
+
+    transform:
+    translateY(-3px);
+
+    box-shadow:
+    0 12px 20px rgba(0,0,0,.15);
+}
+
+/* =========================
+   LINK
+========================= */
+.login-link,
+.register-link{
+
+    margin-top:25px;
+
+    text-align:center;
+
+    color:
+    rgba(255,255,255,.9);
+}
+
+/* LINK */
+.login-link a,
+.register-link a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:700;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+.container{
+
+    animation:
+    fadeIn .5s ease;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}

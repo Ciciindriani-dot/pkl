@@ -1,0 +1,1301 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f1f5f9;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:250px;
+    height:100vh;
+    background:#0f172a;
+    position:fixed;
+    left:0;
+    top:0;
+    padding:30px 20px;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:50px;
+}
+
+.sidebar a{
+    display:block;
+    color:#cbd5e1;
+    text-decoration:none;
+    padding:14px 16px;
+    border-radius:12px;
+    margin-bottom:10px;
+    transition:.3s;
+    font-size:15px;
+}
+
+.sidebar a:hover{
+    background:#1e293b;
+    color:white;
+}
+
+/* MAIN */
+.main{
+    margin-left:250px;
+    padding:30px;
+}
+
+/* TOPBAR */
+.topbar{
+    background:white;
+    padding:25px 30px;
+    border-radius:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.topbar h1{
+    color:#0f172a;
+    font-size:32px;
+}
+
+.topbar p{
+    color:#64748b;
+    margin-top:5px;
+}
+
+/* PROFILE */
+.profile{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.profile-img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #6366f1;
+}
+
+.profile-info h3{
+    color:#0f172a;
+    font-size:16px;
+}
+
+.profile-info p{
+    color:#64748b;
+    font-size:14px;
+}
+
+.grid{
+
+    display:grid;
+
+    gap:24px;
+
+}
+
+/* CARD */
+.card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.card-title{
+    font-size:18px;
+    color:#0f172a;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+/* TEXT */
+.card p{
+    color:#475569;
+    margin-bottom:10px;
+    line-height:1.6;
+}
+
+
+
+/* MENU */
+.menu a{
+    display:block;
+    padding:14px;
+    background:#f8fafc;
+    border-radius:12px;
+    margin-bottom:12px;
+    color:#334155;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.menu a:hover{
+    background:#e2e8f0;
+}
+
+/* ANNOUNCEMENT */
+.announcement{
+    background:#6366f1;
+    color:white;
+}
+
+.announcement p{
+    color:white;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .sidebar{
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+
+    .main{
+        margin-left:0;
+    }
+
+    .topbar{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+}
+
+/* =========================
+   DAFTAR PKL
+========================= */
+
+.daftar-container{
+    max-width: 850px;
+    margin: auto;
+    padding: 35px;
+}
+
+/* SECTION */
+.form-section{
+    margin-bottom: 35px;
+}
+
+/* TITLE */
+.form-title{
+    font-size: 22px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.form-subtitle{
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+/* SELECT */
+.form-group{
+    margin-bottom: 25px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.form-group select{
+    width: 100%;
+    padding: 15px;
+    border-radius: 14px;
+    border: 1px solid #cbd5e1;
+    background: #fff;
+    font-size: 15px;
+    transition: .3s;
+    outline: none;
+}
+
+.form-group select:focus{
+    border-color: #6366f1;
+    box-shadow: 0 0 0 4px rgba(99,102,241,.1);
+}
+
+/* REKOMENDASI BOX */
+.rekomendasi-box{
+    background: #f8faff;
+    border: 1px solid #dbeafe;
+    padding: 18px;
+    border-radius: 14px;
+    margin-top: 12px;
+}
+
+.rekomendasi-box p{
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* BUTTON */
+.btn-daftar{
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(
+        135deg,
+        #6366f1,
+        #4f46e5
+    );
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-daftar:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(99,102,241,.2);
+}
+
+/* HR */
+.line{
+    width: 100%;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 30px 0;
+}
+
+/* bagian admin */
+/* =========================
+   ACTIVE MENU
+========================= */
+.sidebar .active{
+    background:#1e293b;
+}
+
+
+
+/* =========================
+   STAT CARD
+========================= */
+.stat-card h2{
+    font-size:34px;
+    color:#4f46e5;
+    margin:15px 0 8px;
+}
+
+.stat-card p{
+    color:#64748b;
+    font-size:14px;
+}
+
+/* =========================
+   QUICK MENU
+========================= */
+.quick-menu{
+    padding:25px;
+}
+
+/* MENU GRID */
+.menu-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:18px;
+
+    margin-top:20px;
+}
+
+/* MENU ITEM */
+.menu-item{
+    background:#f8fafc;
+
+    border:1px solid #e2e8f0;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    text-decoration:none;
+
+    color:#0f172a;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+/* HOVER */
+.menu-item:hover{
+    background:#6366f1;
+
+    color:white;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 12px 24px rgba(99,102,241,.2);
+}
+/* =========================
+   VALIDASI PKL TABLE
+========================= */
+
+.table-container{
+
+    width:100%;
+    overflow-x:auto;
+
+}
+
+.table-pkl{
+
+    width:100%;
+    border-collapse:collapse;
+    margin-top:25px;
+
+}
+
+.table-pkl thead{
+
+    background:#f8fafc;
+
+}
+
+.table-pkl th{
+
+    padding:18px 16px;
+
+    text-align:left;
+
+    color:#0f172a;
+
+    font-size:14px;
+    font-weight:700;
+
+    border-bottom:1px solid #e2e8f0;
+
+}
+
+.table-pkl td{
+
+    padding:18px 16px;
+
+    color:#475569;
+
+    border-bottom:1px solid #f1f5f9;
+
+    vertical-align:middle;
+
+}
+
+.table-pkl tbody tr{
+
+    transition:.3s;
+
+}
+
+.table-pkl tbody tr:hover{
+
+    background:#f8fafc;
+
+}
+
+/* STATUS */
+
+
+.pending{
+
+    background:#fef3c7;
+    color:#92400e;
+
+}
+
+.diterima{
+
+    background:#dcfce7;
+    color:#166534;
+
+}
+
+.ditolak{
+
+    background:#fee2e2;
+    color:#991b1b;
+
+}
+
+/* BUTTON */
+
+.action-group{
+
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+
+}
+
+.btn-terima,
+.btn-tolak{
+
+    display:inline-block;
+
+    padding:10px 16px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    font-size:13px;
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-terima{
+
+    background:linear-gradient(
+        135deg,
+        #6366f1,
+        #4f46e5
+    );
+
+    color:white;
+
+}
+
+.btn-terima:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 10px 20px rgba(99,102,241,.2);
+
+}
+
+.btn-tolak{
+
+    background:#fee2e2;
+    color:#dc2626;
+
+}
+
+.btn-tolak:hover{
+
+    background:#fecaca;
+
+}
+
+/* DONE */
+
+.done-text{
+
+    color:#16a34a;
+    font-weight:700;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .table-pkl{
+
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+
+    }
+
+}
+ 
+ /* =========================
+   ini perusahaan
+========================= */
+
+.btn-primary{
+
+    background:linear-gradient(
+        135deg,
+        #6366f1,
+        #4f46e5
+    );
+
+    color:white;
+
+    padding:14px 18px;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    font-size:14px;
+    font-weight:600;
+
+    transition:.3s;
+
+    box-shadow:
+    0 10px 20px rgba(99,102,241,.15);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* =========================
+   COMPANY
+========================= */
+
+.company-name{
+
+    font-weight:700;
+    color:#0f172a;
+
+}
+
+.alamat-text{
+
+    max-width:220px;
+
+    color:#475569;
+
+    line-height:1.5;
+
+}
+
+/* =========================
+   BIDANG BADGE
+========================= */
+
+.bidang-badge{
+
+    display:inline-block;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    background:#eef2ff;
+
+    color:#4338ca;
+
+    font-size:13px;
+    font-weight:600;
+
+}
+
+/* =========================
+   BUTTON EDIT
+========================= */
+
+.btn-edit{
+
+    display:inline-block;
+
+    padding:10px 14px;
+
+    background:#dbeafe;
+
+    color:#1d4ed8;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    font-size:13px;
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-edit:hover{
+
+    background:#bfdbfe;
+
+}
+
+/* =========================
+   BUTTON DELETE
+========================= */
+
+.btn-delete{
+
+    display:inline-block;
+
+    padding:10px 14px;
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    font-size:13px;
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-delete:hover{
+
+    background:#fecaca;
+
+}
+
+
+/* =========================
+  ini bagian tambah perusahaan
+========================= */
+
+.form-card{
+
+    max-width:700px;
+    margin:auto;
+}
+
+.form-group{
+
+    margin-bottom:22px;
+
+}
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-size:14px;
+    font-weight:600;
+
+    color:#0f172a;
+
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border-radius:14px;
+
+    border:1px solid #cbd5e1;
+
+    outline:none;
+
+    font-size:14px;
+
+    transition:.3s;
+
+    background:white;
+
+}
+
+.form-group textarea{
+
+    min-height:120px;
+
+    resize:none;
+
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+    border-color:#6366f1;
+
+    box-shadow:
+    0 0 0 4px rgba(99,102,241,.1);
+
+}
+
+.btn-submit{
+
+    border:none;
+
+    padding:14px 20px;
+
+    border-radius:14px;
+
+    background:linear-gradient(
+        135deg,
+        #6366f1,
+        #4f46e5
+    );
+
+    color:white;
+
+    font-size:14px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn-submit:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 10px 20px rgba(99,102,241,.2);
+
+}
+
+/* =========================
+   DASHBOARD KEPSEK
+========================= */
+
+.kepsek-wrapper{
+
+    display:flex;
+    min-height:100vh;
+
+}
+
+/* CONTENT */
+
+.kepsek-content{
+
+    margin-left:250px;
+    width:100%;
+    padding:35px;
+
+}
+
+/* HERO */
+
+.hero-card{
+
+    background:linear-gradient(
+        135deg,
+        #6366f1,
+        #7c3aed
+    );
+
+    border-radius:30px;
+
+    padding:20px;
+
+    color:white;
+
+    box-shadow:
+    0 20px 40px rgba(99,102,241,.2);
+
+    margin-bottom:30px;
+
+}
+
+.hero-card h1{
+
+    font-size:30px;
+    margin-bottom:12px;
+
+}
+
+.hero-card p{
+
+    font-size:16px;
+    opacity:.9;
+
+}
+
+/* INFO CARD */
+
+.info-card{
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:35px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.05);
+
+    max-width:700px;
+
+}
+
+.info-title{
+
+    font-size:24px;
+    font-weight:700;
+
+    color:#0f172a;
+
+    margin-bottom:15px;
+
+}
+
+.info-text{
+
+    color:#64748b;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+/* BUTTON */
+
+.btn-laporan{
+
+    display:inline-block;
+
+    padding:15px 24px;
+
+    border-radius:16px;
+
+    background:linear-gradient(
+        135deg,
+        #6366f1,
+        #4f46e5
+    );
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-laporan:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 15px 25px rgba(99,102,241,.25);
+
+}
+/* =========================
+   ADMIN DASHBOARD
+========================= */
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:24px;
+
+    margin-bottom:30px;
+
+}
+
+/* CARD */
+
+.stats-card{
+
+    background:white;
+
+    padding:28px;
+
+    border-radius:24px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.05);
+
+    transition:.3s;
+
+}
+
+.stats-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* TITLE */
+
+.stats-title{
+
+    color:#64748b;
+
+    font-size:14px;
+
+    margin-bottom:15px;
+
+}
+
+/* NUMBER */
+
+.stats-number{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:#4f46e5;
+
+    margin-bottom:10px;
+
+}
+
+/* DESC */
+
+.stats-desc{
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+}
+
+/* VARIANT */
+
+.success .stats-number{
+
+    color:#16a34a;
+
+}
+
+.danger .stats-number{
+
+    color:#dc2626;
+
+}
+
+/* INFO */
+
+.admin-info{
+
+    margin-top:10px;
+
+}
+
+/* =========================
+   DASHBOARD SISWA NEW
+========================= */
+
+
+
+/* CARD */
+
+.siswa-info-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:24px;
+
+    border:1px solid #e5e7eb;
+
+    min-height:170px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.05);
+
+    transition:.3s;
+}
+
+.siswa-info-card:hover{
+
+    transform:translateY(-6px);
+}
+
+/* TEXT */
+
+.siswa-info-card span{
+
+    font-size:15px;
+
+    color:#64748b;
+
+    margin-bottom:6px;
+}
+
+.siswa-info-card h2{
+
+    font-size:22px;
+
+    line-height:1.4;
+
+    color:#0f172a;
+
+    font-weight:700;
+
+    word-break:break-word;
+}
+
+/* STATUS PKL */
+
+.pendaftaran-item{
+
+    background:#f5f7ff;
+
+    border-left:5px solid #6366f1;
+
+    padding:14px;
+
+    border-radius:14px;
+
+}
+
+.pendaftaran-item strong{
+
+    color:#0f172a;
+
+    font-size:16px;
+
+}
+
+.status-badge{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    background:#fef3c7;
+
+    color:#92400e;
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+/* GRID */
+
+.dashboard-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:24px;
+
+    margin-bottom:28px;
+}
+
+/* STUDENT INFO */
+
+.student-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+}
+
+.student-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding-bottom:14px;
+
+    border-bottom:1px solid #f1f5f9;
+}
+
+.student-item span{
+
+    color:#64748b;
+}
+
+.student-item strong{
+
+    color:#0f172a;
+}
+
+/* TIMELINE */
+
+.timeline{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+}
+
+.timeline-item{
+
+    display:flex;
+
+    gap:15px;
+}
+
+.dot{
+
+    width:14px;
+    height:14px;
+
+    border-radius:50%;
+
+    background:#4f46e5;
+
+    margin-top:6px;
+}
+
+/* PENGUMUMAN */
+
+.pengumuman-card{
+
+    background:
+    linear-gradient(
+        135deg,
+        #4f46e5,
+        #7c3aed
+    );
+
+    color:white;
+    margin-left: 0;
+}
+
+.pengumuman-card .card-title{
+
+    color:white;
+}
+
+.pengumuman-card p{
+
+    color:#e2e8f0;
+
+    line-height:1.7;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+
+
+    .dashboard-grid{
+
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* =========================
+   INFO GRID
+========================= */
+
+.info-grid{
+
+    display:grid !important;
+
+    grid-template-columns:
+    repeat(3,minmax(0,1fr)) !important;
+
+    gap:24px !important;
+
+    margin-bottom:28px;
+
+    width:100%;
+}
+
+/* CARD */
+
+.siswa-info-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:24px;
+
+    border:1px solid #e5e7eb;
+
+    min-height:170px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.05);
+
+    transition:.3s;
+}
+
+.siswa-info-card:hover{
+
+    transform:translateY(-6px);
+}
+
+/* TEXT */
+
+.siswa-info-card span{
+
+    font-size:15px;
+
+    color:#64748b;
+
+    margin-bottom:12px;
+}
+
+.siswa-info-card h2{
+
+    font-size:22px;
+
+    line-height:1.4;
+
+    color:#0f172a;
+
+    font-weight:700;
+
+    word-break:break-word;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .info-grid{
+
+        grid-template-columns:1fr !important;
+    }
+
+}

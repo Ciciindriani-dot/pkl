@@ -55,8 +55,8 @@ $semua = $conn->query("
         Daftar PKL
     </title>
 
-    <link rel="stylesheet"
-          href="/rpl/assets/dashboard.css">
+   <link rel="stylesheet"
+      href="../assets/dashboard.css">
 
 </head>
 <body>

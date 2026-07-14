@@ -1015,8 +1015,6 @@ body{
 
     border:1px solid #e5e7eb;
 
-    min-height:170px;
-
     display:flex;
 
     flex-direction:column;
@@ -1069,6 +1067,10 @@ body{
     padding:14px;
 
     border-radius:14px;
+    
+    margin-top:10px;
+
+    width:100%;
 
 }
 
@@ -1100,19 +1102,21 @@ body{
 
 }
 
-/* GRID */
+    /* GRID */
 
-.dashboard-grid{
+    .dashboard-grid{
 
-    display:grid;
+        display:grid;
 
-    grid-template-columns:
-    1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0,1fr));
 
-    gap:24px;
+        gap:24px;
 
-    margin-bottom:28px;
-}
+        align-items:start;
+
+        margin-bottom:28px;
+
+    }
 
 /* STUDENT INFO */
 
@@ -1216,55 +1220,18 @@ body{
 
 }
 
-/* =========================
-   INFO GRID
-========================= */
-
 .info-grid{
 
-    display:grid !important;
+    display:grid;
 
-    grid-template-columns:
-    repeat(3,minmax(0,1fr)) !important;
+    grid-template-columns:repeat(2,minmax(0,1fr));
 
-    gap:24px !important;
+    gap:24px;
 
     margin-bottom:28px;
 
     width:100%;
 }
-
-/* CARD */
-
-.siswa-info-card{
-
-    background:white;
-
-    padding:30px;
-
-    border-radius:24px;
-
-    border:1px solid #e5e7eb;
-
-    min-height:170px;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    box-shadow:
-    0 10px 25px rgba(0,0,0,.05);
-
-    transition:.3s;
-}
-
-.siswa-info-card:hover{
-
-    transform:translateY(-6px);
-}
-
 /* TEXT */
 
 .siswa-info-card span{

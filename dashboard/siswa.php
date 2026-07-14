@@ -151,69 +151,57 @@ while($row = $queryStatus->fetch_assoc()){
 
     </div>
 
-    <!-- =========================
-         INFO CARD
-    ========================= -->
+   <!-- =========================
+     INFO CARD
+========================= -->
+
+<div class="info-grid">
 
     <!-- STATUS PKL -->
+    <div class="siswa-info-card">
 
-<div class="siswa-info-card">
+        <span>Status PKL</span>
 
-    <span>
-        Status PKL
-    </span>
+        <?php if(count($dataPkl) > 0) : ?>
 
-    <?php if(count($dataPkl) > 0) : ?>
+            <?php foreach($dataPkl as $data) : ?>
 
-        <?php foreach($dataPkl as $data) : ?>
+                <div class="pendaftaran-item">
 
-            <div class="pendaftaran-item">
+                    <strong>
+                        <?= $data['nama_perusahaan']; ?>
+                    </strong>
 
-                <strong>
-                    <?= $data['nama_perusahaan']; ?>
-                </strong>
+                    <br>
 
-                <br>
+                    <span class="status-badge">
+                        <?= ucfirst($data['status']); ?>
+                    </span>
 
-                <span class="status-badge">
+                </div>
 
-                    <?= ucfirst($data['status']); ?>
+            <?php endforeach; ?>
 
-                </span>
+        <?php else : ?>
 
-            </div>
+            <p style="margin-top:15px;">
+                Belum daftar PKL
+            </p>
 
-        <?php endforeach; ?>
-
-    <?php else : ?>
-
-        <p style="margin-top:15px;">
-
-            Belum daftar PKL
-
-        </p>
-
-    <?php endif; ?>
-
-</div>
-
-       
-
-        <!-- JURUSAN -->
-
-        <div class="siswa-info-card">
-
-            <span>
-                Jurusan
-            </span>
-
-            <h2>
-                <?= $siswa['jurusan']; ?>
-            </h2>
-
-        </div>
+        <?php endif; ?>
 
     </div>
+
+    <!-- JURUSAN -->
+    <div class="siswa-info-card">
+
+        <span>Jurusan</span>
+
+        <h2><?= $siswa['jurusan']; ?></h2>
+
+    </div>
+
+</div>
 
     <!-- =========================
          GRID CONTENT
